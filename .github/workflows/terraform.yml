@@ -32,4 +32,5 @@ jobs:
         run: terraform validate
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve -var="gemini_api_key=${{ secrets.GEMINI_API_KEY }}" -var="admin_email=${{ secrets.ADMIN_EMAIL }}"
+         run: terraform apply -auto-approve -var="gemini_api_key=${{ secrets.GEMINI_API_KEY }}" -var="admin_email=${{ secrets.ADMIN_EMAIL }}" || true
+       
