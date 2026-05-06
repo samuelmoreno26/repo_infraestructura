@@ -13,10 +13,6 @@ resource "aws_cognito_user_pool" "users" {
   }
 
   verification_message_template {
-    default_email_options {
-      email_message = "Tu código de verificación es {####}."
-      email_subject = "Bienvenido a MEGA STORE - Código de Verificación"
-    }
   }
 
   account_recovery_setting {
