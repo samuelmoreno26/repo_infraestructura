@@ -15,4 +15,5 @@ El archivo `.github/workflows/terraform.yml` define un flujo de despliegue conti
 - `ADMIN_EMAIL`: Correo verificado en SES para envío de notificaciones
 
 **Nota técnica:** Las funciones Lambda iniciales se crean a partir de un archivo `dummy.zip` con una regla de ciclo de vida (`ignore_changes`) para permitir que los repositorios de código de Lambda manejen sus propios despliegues mediante la AWS CLI.
+
 Pipeline funcionando correctamente
